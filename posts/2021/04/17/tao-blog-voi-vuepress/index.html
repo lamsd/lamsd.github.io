@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tạo blog với vuepress | Theme</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.ebb6bbac.css" as="style"><link rel="preload" href="/assets/js/app.35d3445d.js" as="script"><link rel="preload" href="/assets/js/7.7007ef5b.js" as="script"><link rel="prefetch" href="/assets/js/2.3a20468b.js"><link rel="prefetch" href="/assets/js/3.7806952e.js"><link rel="prefetch" href="/assets/js/4.c142e7bb.js"><link rel="prefetch" href="/assets/js/5.7200fa04.js"><link rel="prefetch" href="/assets/js/6.71604167.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ebb6bbac.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><section id="global-layout" data-v-4fb7124e><header class="header" data-v-61b62cbe data-v-4fb7124e><div class="header-navbar" data-v-61b62cbe><div class="flex-xbc main header-nav" data-v-61b62cbe><div class="nav-link" data-v-61b62cbe><a href="/" class="inblock link-logo router-link-active" data-v-61b62cbe><img data-src="/logo.png" loading="lazy" alt="logo" class="logo-img lazy" data-v-61b62cbe></a> <nav class="link-list" data-v-61b62cbe><a href="/" class="list-item router-link-active" data-v-61b62cbe>Home</a><a href="/posts/" class="list-item router-link-active" data-v-61b62cbe>Posts</a><a href="/tag/" class="list-item" data-v-61b62cbe>Tags</a><a href="/category/" class="list-item" data-v-61b62cbe>Categories</a><a href="/about/" class="list-item" data-v-61b62cbe>About</a></nav></div> <div class="search-box" data-v-61b62cbe><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div></div> </header> <!----> <section class="page" data-v-4fb7124e data-v-4fb7124e><section class="info no-bg" data-v-52fe94f0><article class="main info-content" data-v-a5c9dc12 data-v-52fe94f0><div class="content-header" data-v-a5c9dc12><h1 class="header-title" data-v-a5c9dc12>Tạo blog với vuepress</h1></div> <div class="flex-wcc content-tag" data-v-a5c9dc12><div class="inblock tag-list" data-v-a5c9dc12><a href="/category/Vue/" class="tag-text" data-v-a5c9dc12>Vue
+      </a></div> <span class="tag-space" data-v-a5c9dc12>/</span> <div class="inblock tag-list" data-v-a5c9dc12><a href="/tag/frontend/" class="tag-text" data-v-a5c9dc12>frontend
+      </a><a href="/tag/vuepress/" class="tag-text" data-v-a5c9dc12>vuepress
+      </a></div></div> <div class="content content__default" data-v-a5c9dc12><h1 id="muc-luc"><a href="#muc-luc" class="header-anchor">#</a> Mục lục</h1> <p></p><div class="table-of-contents"><ul><li><a href="#tao-project-vue-press">Tạo project vue press:</a></li><li><a href="#cai-theme-blog-cho-vue-press">Cài theme blog cho vue press</a></li><li><a href="#viet-components-đe-hien-thi-bai-viet">Viết components để hiển thị bài viết</a></li><li><a href="#mot-so-chinh-sua-nho-nho-cho-trang-blog">Một số chỉnh sửa nho nhỏ cho trang blog</a></li></ul></div><p></p> <h2 id="tao-project-vue-press"><a href="#tao-project-vue-press" class="header-anchor">#</a> Tạo project vue press:</h2> <p>Tại giao diện terminal, bạn gõ lệnh để tải và cài đặt vuepress</p> <div class="language- extra-class"><pre class="language-text"><code>npx create-vuepress-site blog4share
+
+</code></pre></div><p>bạn sẽ được hỏi một số thông tin về project, để đơn giản cứ enter hết là xong.</p> <p>Kế tiếp bạn vào thư mục blog4share/docs</p> <div class="language- extra-class"><pre class="language-text"><code>cd blog4share/docs
+</code></pre></div><p>Tại đây, để chạy trang vuepress bạn gõ lệnh</p> <div class="language- extra-class"><pre class="language-text"><code>npm run dev
+</code></pre></div><p>Khi xuất hiện dòng chữ bên dưới tức là đã cài được vuepress thành công và http://localhost:8080/ cũng là địa chỉ để truy cập vào vuepress.</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; VuePress dev server listening at http://localhost:8080/
+</code></pre></div><p>khi vào địa chỉ phía trên sẽ ra giao diện như hình bên dưới
+<img alt="" data-src="https://bl6pap004files.storage.live.com/y4mnhqv0n3WbKi3tX7KV8N54EPPGsLU8WrfDVwVYVYaUQDJAqx4INHbSSPATBQFGialtk9K3SYTsWWyyiosMYQ1oJNwvrbTZu7aptRs2041RvtU0mVnVkOlTVrHNV0MBvWtWX6Z2jVGDBLWeF_AE-lrXPzAqCQ2-RAbom8X9znifwumr_d5H7hAxkHFxgK3BFzo?width=1366&amp;height=657&amp;cropmode=none" loading="lazy" class="lazy"></p> <p>Ở bước tiếp theo chúng ta sẽ cài plugin blog cho vuepress.</p> <h2 id="cai-theme-blog-cho-vue-press"><a href="#cai-theme-blog-cho-vue-press" class="header-anchor">#</a> Cài theme blog cho vue press</h2> <p>Để cài theme blog, bạn chạy lệnh</p> <div class="language- extra-class"><pre class="language-text"><code>npm install @vuepress/theme-blog -D
+</code></pre></div><p>Sau khi chạy xong, bạn sửa file src/.vuepress/config.js với nội dung như dưới đây</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// src/.vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'Blog 4 Sharing'</span><span class="token punctuation">,</span> <span class="token comment">// Title for the site. This will be displayed in the navbar.</span>
+  <span class="token literal-property property">theme</span><span class="token operator">:</span> <span class="token string">'@vuepress/theme-blog'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">themeConfig</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">nav</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">text</span><span class="token operator">:</span> <span class="token string">&quot;Trang chủ&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">link</span><span class="token operator">:</span> <span class="token string">&quot;/&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">text</span><span class="token operator">:</span> <span class="token string">&quot;Bài viết&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">link</span><span class="token operator">:</span> <span class="token string">&quot;/posts/&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>   
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Chạy đoạn lệnh bên dưới để kiểm tra</p> <div class="language- extra-class"><pre class="language-text"><code>npm run dev
+</code></pre></div><p>Nếu kết quả như hình dưới tức là đã cài xong theme blog.
+<img alt="" data-src="https://bl6pap004files.storage.live.com/y4mUkRCL0tut_LvEll0Ti56saL3d01HERbymzZfnlL8ANZuxRIlzHSASc5Ah75iazSViMS3MgPpWkwimP1B4vUQaKHAUV1OS6QWNDS-kzl2QNA4l1iHa6D40aEKvQm4SCirraPXsWwjRdsvuKJmSqVx7QghcIIUGMTBCCQ84Jex_t2Dqpt6_LngrYFwh553B_JL?width=1366&amp;height=657&amp;cropmode=none" loading="lazy" class="lazy"></p> <p>Nhưng rồi cũng đâu giống trang blog nhỉ, danh sách các bài viết ở đâu?</p> <p>Cái đó thì cần viết component qua bước kế tiếp để thực hiện điều đó nhé.</p> <h2 id="viet-components-đe-hien-thi-bai-viet"><a href="#viet-components-đe-hien-thi-bai-viet" class="header-anchor">#</a> Viết components để hiển thị bài viết</h2> <p>Vào thư mục src/.vuepress/components tạo một file có tên BlogIndex.vue với nội dung như bên dưới</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!--src/.vuepress/components/BlogIndex.vue --&gt;</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>post in posts<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-link</span> <span class="token attr-name">:to</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>post.path<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{ post.frontmatter.title }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>router-link</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+        
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>{{ post.frontmatter.description }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-link</span> <span class="token attr-name">:to</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>post.path<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Read more<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>router-link</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">computed</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token function">posts</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$site<span class="token punctuation">.</span>pages
+                <span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=&gt;</span> x<span class="token punctuation">.</span>path<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span><span class="token string">'/posts/'</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>x<span class="token punctuation">.</span>frontmatter<span class="token punctuation">.</span>blog_index<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span>b<span class="token punctuation">.</span>frontmatter<span class="token punctuation">.</span>date<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span>frontmatter<span class="token punctuation">.</span>date<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>Đoạn script này đại ý là lấy toàn bộ những url có chứa /posts/ vào danh sách hiển thị.</p> <p>Bạn tạo thư mục tại src/posts và tạo các bài viết theo mẫu file bên dưới</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- /posts/first-post.md --&gt; không copy đòng này
+# Using Vue in Markdown 3
+
+## Browser API Access Restrictions
+
+Because VuePress applications are server-rendered in Node.js when generating static builds, any Vue usage must conform to the [universal code requirements](https://ssr.vuejs.org/en/universal.html). In short, make sure to only access Browser / DOM APIs in `beforeMount` or `mounted` hooks.
+
+If you are using or demoing components that are not SSR friendly (for example containing custom directives), you can wrap them inside the built-in `&lt;ClientOnly&gt;` component:
+
+##
+
+</code></pre></div><p>cũng tại thư mục posts, bạn tạo file index.md có nội dung như sau</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- /posts/index.md --&gt; không copy đòng này
+---
+blog_index: true
+---
+
+# Blog
+
+Welcome on Blog 4 Share
+
+&lt;BlogIndex /&gt;
+</code></pre></div><p>Chạy đoạn lệnh bên dưới để kiểm tra</p> <div class="language- extra-class"><pre class="language-text"><code>npm run dev
+</code></pre></div><p><img alt="" data-src="https://bl6pap004files.storage.live.com/y4mydY4H6_a_UgNhv4RG__oW_2XGbgynTmtxIKwO8LffbM1Hd7u599SUhH8GAaxGIQFu39h-WZGUztCxgWzjd9TO0rBcSXXKt6iSrtuUlUzQvV5ebY9zjPjCQAnYBCsZScO9kswJtayDUzG32ty-LKS09y4gcQGXNUSB7sDyGnVMaNT-c8IPNCFCukX_B_UjY9j?width=1366&amp;height=600&amp;cropmode=none" loading="lazy" class="lazy"></p> <h2 id="mot-so-chinh-sua-nho-nho-cho-trang-blog"><a href="#mot-so-chinh-sua-nho-nho-cho-trang-blog" class="header-anchor">#</a> Một số chỉnh sửa nho nhỏ cho trang blog</h2> <p>Để chỉnh trang chủ, bạn vào file src/index.md đổi nội dung như bên dưới:</p> <div class="language- extra-class"><pre class="language-text"><code>---
+home: true
+---
+
+![](https://pixabay.com/get/g0470b665bcad720b02a56ec715b31d99e43cb743c4aefb08e820ca7bbcac52b67ae06246772302915577dbbe533d71d73c289e870b65e0d4a682f8b153c1b92d_1920.jpg)
+&lt;OtherComponent/&gt;
+&lt;Bar/&gt;
+&lt;demo-component/&gt;
+</code></pre></div><p>Để cấu hình thanh nav ở trên, bạn edit file src/.vuepress/config.js như bên dưới để tùy chỉnh</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// src/.vuepress/config.js</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'Blog 4 Share'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">themeConfig</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">nav</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> <span class="token literal-property property">text</span><span class="token operator">:</span> <span class="token string">'Home'</span><span class="token punctuation">,</span> <span class="token literal-property property">link</span><span class="token operator">:</span> <span class="token string">'/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span> <span class="token literal-property property">text</span><span class="token operator">:</span> <span class="token string">'Blog'</span><span class="token punctuation">,</span> <span class="token literal-property property">link</span><span class="token operator">:</span> <span class="token string">'/blog/'</span> <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Cuối cùng là chạy:</p> <div class="language- extra-class"><pre class="language-text"><code>npm run dev
+</code></pre></div><p>Trang chủ hiện như hình bên dưới là thành công
+<img alt="" data-src="https://bl6pap004files.storage.live.com/y4m3X6yMSl6M4jIL5DDnJNwrguL8XbG_CU4BoelcbnB1KlzUzWUjqi4W2k_HofpnK00fLUAJwuYDvOGHNBlvexQkOwJs5WhiH5rvV-Q0_P_YkAZoXezNdhMccyj-8PhvQ7N7v3LMxsgU3okoYHIKA6rLr0XeHk5_7Uf2tpsg4Yya__OBpDY2WamssR40MdnG54q?width=1366&amp;height=657&amp;cropmode=none" loading="lazy" class="lazy">
+Bài viết này chỉ tập trung những thao tác cốt lõi nhất để tạo một blog cơ bản với vuepress. Để tìm hiểu sâu hơn, bạn nên xem tài liệu hỗ trợ tại https://vuepress.vuejs.org/ .</p></div> <div class="content-time" data-v-a5c9dc12><time datetime="4/17/2021, 7:00:00 AM" class="time-text" data-v-a5c9dc12>Create Time: 4/17/2021, 7:00:00 AM
+    </time> <time datetime="4/4/2022, 1:43:37 PM" class="time-text" data-v-a5c9dc12>Last Updated: 4/4/2022, 1:43:37 PM
+    </time></div></article> <section class="flex-xb main info-nav" data-v-e08c9474 data-v-52fe94f0><!----> <a href="/posts/2020/02/20/_3/" class="flex-xb nav-item" data-v-e08c9474><div class="flex-xcc item-img" data-v-e08c9474><img data-src="https://picsum.photos/1920/1080/?random&amp;date=2019-02-20" loading="lazy" alt="display-none" class="img lazy" data-v-e08c9474></div> <article class="flex-ysc item-content" data-v-e08c9474><h2 class="content-title" data-v-e08c9474>display-none</h2> <div class="content" data-v-e08c9474></div></article></a></section> <!----></section></section> <footer class="footer" data-v-5bc4f524 data-v-4fb7124e><nav class="link-list" data-v-5bc4f524><a href="https://github.com/tolking" target="_blank" rel="noopener noreferrer" class="list-item" data-v-5bc4f524>Github</a></nav> <a href="/" class="copyright router-link-active" data-v-5bc4f524>Theme © 2022</a></footer></section><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.35d3445d.js" defer></script><script src="/assets/js/7.7007ef5b.js" defer></script>
+  </body>
+</html>
